@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login</title>
+    <style>
+        *{
+            color: white;
+        }
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/012/410/341/small_2x/premium-security-cyber-digital-concept-abstract-technology-background-protect-system-innovation-for-business-illustration-vector.jpg");
+            background-size: cover;
+        }
+        .Home{
+        border: 2px solid;
+        position: sticky;
+        left: 0;
+        top: 0;
+        width: 60px;
+       }
+       .Home a{
+        text-decoration: none;
+        font-size: large;     
+        display: flex;
+       }
+       .submit{
+        background-color: black ;
+       }
+    </style>
+</head>
+<body>
+    <div class="Home"> <a id="name" href="http://127.0.0.1:5500/DTI-project/index.html">HOME</a></div>
+    <div class="Home"> <a id="name" href="member_login.html">BACK</a></div>
+    <H1 align="center">REGISTER NOW</H1><br>
+<form
+align="center" >
+Name:
+<input type="text" placeholder="Enter name "><br><br>
+Gender
+<label for="1">
+<input type="radio" value="Male" name="z" id="1">Male</label>
+<label for="2">
+<input type="radio" value="female" name="z" id="2">
+
+Female</label>
+<br><br>
+DOB : <input type="date" max="10-03-2007"><br><br>
+Email : <input type="email" placeholder="Email address"><br><br>
+Phone : <input type="tel" placeholder="Phone number"><br><br>
+
+Password :<input type="password" placeholder="Password"><br><br>
+Confirm password : <input type="password" placeholder="Confirm
+password"><br><br>
+<input type="checkbox">I agree to terms and conditions<br><br>
+<input type="submit" value="Submit Application" class="submit" onclick="formsubmit()"><br><br>
+<script>
+    function formsubmit(){
+        alert("Your information has been succesfully submitted");
+    }
+</script>
+</body>
+</html>

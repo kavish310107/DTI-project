@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background: linear-gradient(to right,rgb(81, 81, 201),white);
+        }
+        #head{  
+            color: yellow;
+            text-align: center;
+            font-weight: bolder;
+            font-style: oblique;
+            font-size: xx-large;
+        }
+        #head2{
+            text-align: center;
+        }
+        .information{
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        .information div{
+            height: 300px;
+            width: 20%;
+        background: linear-gradient(to right,rgb(45, 218, 2),white);
+        border: 2px solid black;
+        }
+        .information p{
+            font-size: x-large;
+            position: relative;
+            text-align: center;
+            justify-content: center;   
+        }
+        .information h1{
+            font-size: x-large;
+            position: relative;
+            text-align: center;
+            justify-content: center;   
+        }
+        .form{
+            height: 500px;
+            width: 90%;
+            
+            position: absolute;
+            left: 80px;
+            /* flex-wrap: wrap; */
+        }
+        .form input{
+            height: 50px;
+            width: 500px;
+            border: 2px solid grey;
+            margin: 0 30px 30px 0;
+        }
+        textarea{
+            height: 50px;
+            width: 500px;
+            border: 2px solid grey;
+        }
+       .Home{
+        border: 2px solid black;
+        position: sticky;
+        left: 0;
+        top: 0;
+        width: 60px;
+       }
+       .Home a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+       }    
+    </style>
+</head>
+<body>
+    <div class="Home"> <a id="name" href="http://127.0.0.1:5500/DTI-project/index.html">HOME</a></div>
+    <h1 id="head">Contact Us</h1><br>
+    <h1 id="head2">Champions Sports Club</h1><br><br><br><br><br><br><br>
+<div class="information">
+    <div class="Address">
+        <i class="fa-solid fa-location-dot"></i>
+        <h1>REACH US</h1>
+        <p id="address">Gate 15,Champions Sports Club,Veermata Jijabai Technological Institute,Matunga,Mumabai - 400019</p>
+    </div>
+    <div class="phone">
+        <i class="fa-solid fa-phone"></i>
+        <h1>CONTACT US</h1>
+        <p>9845787220 / 9876702031</p>
+    </div>
+    <div class="time">
+        <i class="fa-solid fa-clock"></i>
+        <h1>TIMING</h1>
+        <p> 9 AM - 6 PM </p>
+    </div>
+    <div class="mail">
+        <i class="fa-solid fa-envelope"></i>
+        <h1>EMAIL US</h1>
+        <p>mail@csc.in</p>
+        <p>Send us your queries at any time</p>
+    </div>
+</div><br><br><br><br><br><br><br>
+<div class="form">
+    <div class="form">
+        <form onsubmit="return formsubmit()">
+            <label for="01">
+                <input type="text" placeholder="Your Name" id="01" maxlength="20" required>
+            </label>
+            <label for="02">
+                <input type="email" placeholder="Your Email address" id="02" required>
+            </label>
+            <label for="03">
+                <input type="tel" placeholder="Phone Number" id="03" maxlength="10" required>
+            </label>
+            <textarea placeholder="Message" maxlength="300" required></textarea>
+            <input type="submit" class="submit" name="Submit" style="background-color: yellowgreen;position: relative;left: 300px;">
+        </form>
+    </div>
+    
+    <script>
+        function formsubmit() {
+            const email = document.getElementById('02').value.trim();
+            const phone = document.getElementById('03').value.trim();
+    
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            const phonePattern = /^[0-9]{10}$/;
+    
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+    
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+    
+            alert("Thank you for filling the form, someone from our team will contact you soon.");
+            return true; 
+        }
+    </script>
+    
+</body>
+</html>
