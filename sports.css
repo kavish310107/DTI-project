@@ -1,0 +1,115 @@
+body{
+    background-color: aqua;
+}
+.Home{
+    border: 2px solid;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 60px;
+    background-color: rgb(30, 218, 30);
+    box-shadow: 4px 4px rgb(37, 36, 36);
+   }
+.Home a{
+    text-decoration: none;
+    font-size: large;      
+}
+h1{
+    text-align: center;
+}
+.sports{
+    width: 100%;
+   
+}
+.swimming , .gym , .TT , .badminton{
+    width: 100%;
+    height: 900px;
+}
+.swimming h2 , .gym h2 , .TT h2, .badminton h2{
+    text-align: center;
+    font-weight: 900;
+}
+.slideshow1{
+    animation: img_slideshow1 15s infinite;
+}
+.slideshow2 {
+    animation: img_slideshow2 15s infinite;
+  }
+  .slideshow3{
+    animation: img_slideshow3 15s infinite;
+}
+.slideshow4 {
+    animation: img_slideshow4 15s infinite;
+  }
+
+.slideshow1 img , .slideshow2 img ,.slideshow3 img , .slideshow4 img{
+    height: 200px;
+    width: 100%;
+}
+@keyframes img_slideshow1{
+    0%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-53.png");
+    }
+    33%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-51.png");
+    }
+    66%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-48.png");
+    }
+    100%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-53.png");
+    }
+}
+@keyframes img_slideshow2{
+    0%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-15.png");
+    }
+    33%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-17.png");
+    }
+    66%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-16.png");
+    }
+    100%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-15.png");
+    }
+}
+@keyframes img_slideshow3{
+    0%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-57.png");
+    }
+    33%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-56.png");
+    }
+    66%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-57.png");
+    }
+    100%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-56.png");
+    }
+}
+@keyframes img_slideshow4{
+    0%{
+        background-image: url("https://www.gsc.in/public/user/images/badminton-gsc-1.png");
+        }
+    33%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-2.png");
+    }
+    66%{
+        background-image: url("https://www.gsc.in/public/user/images/FACILITIES/pic-4.png");
+    }
+    100%{
+        background-image: url("https://www.gsc.in/public/user/images/badminton-gsc-1.png");
+    }
+}
+#info{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    font-size: large;
+    line-height: 30px;
+}
+
