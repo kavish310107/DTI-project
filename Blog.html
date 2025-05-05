@@ -3,102 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <meta name="description" content="About Champions Sports Club">
+    <title>About - Champions Sports Club</title>
     <style>
-     h1{
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .home-button {
+      position: fixed;
+      top: 30px;
+      right: 30px; 
+      z-index: 100;
+    }
+    .home-button a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #e74c3c;
+      color: white; 
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+      border: 2px solid #c0392b; 
+    }
+    .home-button a:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px #252424;
+    }
+    .page-header {
         text-align: center;
-        color: red;
-     }
-     h2{
-        text-align: center;
-     }
-     .img{
-        position: relative;
-        left: 90px;
-     }
-     #img1 #img2{
-        height: 300px;
-        width: 500px;
-     }
-     .info{
-        line-height: 30px;
-        font-style: oblique;
-        font-weight: 500;
-        width: 80%;
-        position: relative;
-        left: 90px;
-        text-align: center;
-     }
-     .founders{
+        margin-bottom: 40px;
+    }
+    .page-header h1 {
+        color: #e74c3c;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .page-header h2 {
+        font-size: 1.8rem;
+        color: #2c3e50;
+    }
+    .gallery {
         display: flex;
         flex-wrap: wrap;
-     }
-     .founder{
-        margin: 4px;
-        border: 4px ;
-     }
-     .Home{
-        border: 2px solid black;
-        position: sticky;
-        left: 0;
-        top: 0;
-        width: 60px;
-        background-color: rgb(30, 218, 30);
-        box-shadow: 4px 4px rgb(37, 36, 36);
-       }
-       .Home a{
-        text-decoration: none;
-        color: black;
-        font-size: large;      
-       }
+        justify-content: center;
+        gap: 20px;
+        margin: 40px 0;
+    }
+    .gallery img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .about-info {
+        max-width: 800px;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+    .founders-section {
+        text-align: center;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .founders-grid {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .founder {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .founder:hover {
+        transform: translateY(-5px);
+    }
+    .founder img {
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .founder p {
+        margin: 0;
+        font-weight: bold;
+    }
+    section img{
+      height: 200px;
+      border-radius: 50%;
+    }
     </style>
-    <link rel="import" href="index.html">
 </head>
 <body>
-  <div class="Home"> <a id="name" href="index.html">HOME</a></div>
-    <h1>About</h1><br>
-    <h2>CHAMPIONS SPORTS CLUB</h2><br>
-    <div class="img">
-    <img id="img1" src="https://gsc.in/public/user/images/gsc-1.png">
-    <img id="img2" src="https://gsc.in/public/user/images/gsc-2.png">
-    </div>
-    <p class="info">With the increase in materialism and the need for excellence, the people around the world now look forward to world-class products, services, facilities, and hospitality. Rapidly changing lifestyles, particularly in the metros, have increased the consciousness about health, mental peace, and spirituality amongst the urban population. Traditionally, our country has been a pioneer in the areas of health and hospitality & this tradition is very well blended with the western concept of materialism at Champions Sports Club, set up under the Sports Branch of veermata Jijabai Technological Institute.</p><br>
-    <h1>Our founders</h1><br>
-    <div class="founders">
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/member-1.png" alt="Radheshyam Gupta">
-          <p>(Late) Radheshyam Gupta</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/mem-2.png" alt="Surendra Pandya">
-          <p>(Late) Surendra Pandya</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/img-3.png" alt="Anthony Pereira">
-          <p>(Late) Anthony Pereira</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/mem-4.png" alt="Prabhakar Modak">
-          <p>(Late) Prabhakar Modak</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/img9.png" alt="Krishnakant Desai">
-          <p>(Late) Krishnakant Desai</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/mem-6.png" alt="Pradeepkumar C. Sablok">
-          <p>Pradeepkumar C. Sablok</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/img-7.png" alt="Krishnakant Jain">
-          <p>(Er.) Krishnakant Jain</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/mem8.png" alt="Rikhabchand Dhabaria">
-          <p>Rikhabchand Dhabaria</p>
-        </div>
-        <div class="founder">
-          <img src="https://gsc.in/public/user/images/management/mem-5.png" alt="Raghava Suvarna">
-          <p>Raghava Suvarna</p>
+    <nav class="home-button">
+        <a href="index.html">HOME</a>
+    </nav>
+    
+    <main class="container">
+        <header class="page-header">
+            <h1>About</h1>
+            <h2>CHAMPIONS SPORTS CLUB</h2>
+        </header>
+        
+        <section class="gallery">
+            <img src="https://gsc.in/public/user/images/gsc-1.png" alt="Sports Club Facility 1">
+            <img src="https://gsc.in/public/user/images/gsc-2.png" alt="Sports Club Facility 2">
+        </section>
+        
+        <article class="about-info">
+          <p class="info">With the increase in materialism and the need for excellence, the people around the world now look forward to world-class products, services, facilities, and hospitality. Rapidly changing lifestyles, particularly in the metros, have increased the consciousness about health, mental peace, and spirituality amongst the urban population. Traditionally, our country has been a pioneer in the areas of health and hospitality & this tradition is very well blended with the western concept of materialism at Champions Sports Club, set up under the Sports Branch of Veermata Jijabai Technological Institute.</p>
+        </article>
+        
+        <section class="founders-section">
+            <h1>Our Founders</h1>
+            <div class="founders-grid">
+              <div>
+                <img src="indraneel.jpg" alt="">
+                <div>
+                  <h1>Indraneel Hajarnis</h1>
+                </div>
+              </div>
+              <div>
+                <img src="kavish.jpg" alt="">
+                <div>
+                  <h1>Kavish Desai</h1>
+                </div>
+              </div>
+              <div>
+                <img src="dhruv.jpg" alt="">
+                <div>
+                  <h1>Dhruv Lad</h1>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
