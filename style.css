@@ -126,6 +126,7 @@ header {
 }
 .contentbox h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:  lightgoldenrodyellow;
   font-size: 50px;
   margin-bottom: 10px;
   padding-bottom: 0;
@@ -226,4 +227,56 @@ li img{
 }
 .home-button a:hover {
     box-shadow: 1px 1px black;
+}
+.ambience{
+  background: url('ambience.png');
+  background-size: cover;
+}
+.food{
+  background: url('food.jpg');
+  background-size: cover;
+}
+.menu{
+  background: url('fd.png');
+  background-size: cover;
+}
+.delivery{
+  background: url('delivery.jpg');
+  background-size: cover;
+}
+main div ul li a{
+  text-decoration: none;
+  color: black;
+}
+.banquet{
+  background: url('banquet.png');
+  background-size: cover;
+}
+.plot{
+  background: url('plot.jpeg');
+  background-size: cover;
+}
+.hall{
+  background: url('hall.jpg');
+  background-size: cover;
+}
+.conference{
+  background: url('confence.jpg');
+  background-size: cover;
+}
+.weight{
+  background: url('weight.jpg');
+  background-size: cover;
+}
+.crossfit{
+  background: url('cross.jpeg');
+  background-size: cover;
+}
+.cardio{
+  background: url('cardio.png');
+  background-size: cover;
+}
+.trainer{
+  background: url('trainer.jpg');
+  background-size: cover;
 }
