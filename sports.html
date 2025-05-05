@@ -3,88 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Facilities</title>
-    <link rel="stylesheet" href="sports.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="Home"> <a id="name" href="http://127.0.0.1:5500/DTI-project/index.html">HOME</a></div>
-    <h1>CHAMPIONS SPORTS CLUB</h1>
-    <H2>Sports Activities Available :</H2>
-    <ol>
-        <li>Swimming</li>
-        <li>Gymnasium</li>
-        <li>Table Tennis</li>
-        <li>Badminton</li>
-    </ol>
-    <div class="sports">
-        <div class="swimming">
-            <h2>SWIMMING</h2>
-            <div class="slideshow1">
-                <img>
-                <img>
-                <img>
+    <main>
+        <div class="contentbox sports">
+            <div>
+                <h1>SPORTS</h1>
+                <ul>
+                    <li>Cricket/Football Turf</li>
+                    <li>Pickle Ball</li>
+                    <li>Badminton Court</li>
+                    <li>Swimming Pool</li>
+                </ul>
             </div>
-            <p id="info">Swimming is a versatile and accessible activity with physical, recreational, and therapeutic benefits. It promotes fitness, water safety, and well-being and is suitable for individuals of all ages and abilities. Whether for leisure, exercise, or competition, swimming offers a wide range of opportunities for people to enjoy and benefit from water-based activities.</p>
-            <h3>POOL TIMINGS : 6 AM - 8 PM</h3>
-            <p>Get more details about this sport</p><button value="add" id="swimming">ADD</button>
         </div>
-        <div class="gym">
-            <h2>GYMNASIUM</h2>
-            <div class="slideshow2">
-                <img>
-                <img>
-                <img>
+        <div class="contentbox restaurant">
+            <div>
+                <h1>Resturant</h1>
+                <ul>
+                    Types of Food available:
+                    <li>Gujarati</li>
+                    <li>Punjabi</li>
+                    <li>South Indian</li>
+                    <li>Chinese</li>
+                </ul>
             </div>
-            <p id="info">Gyms are dedicated spaces for fitness and exercise that offer a wide range of equipment, classes, and resources to help individuals achieve their fitness goals. They promote physical well-being, provide opportunities for social interaction, and offer a convenient and controlled environment for workouts. Gyms cater to people of all fitness levels and ages, making them valuable assets in promoting a healthy and active lifestyle.</p>
-            <h3>GYMNASIUM TIMINGS : 6 AM - 11 PM</h3>
-            <p>Get more details about this sport</p><button value="add" id="gym">ADD</button>
         </div>
-    </div>
-    <div class="TT">
-        <h2>TABLE TENNIS</h2>
-        <div class="slideshow3">
-            <img>
-            <img>
-            <img>
+        <div class="contentbox gym">
+            <div>
+                <h1>Gym</h1>
+                <ul>
+                    <li>Weight Training</li>
+                    <li>Cross Fit</li>
+                    <li>Cardio</li>
+                    <li>Personal Training</li>
+                </ul>
+            </div>
         </div>
-        <p id="info">Table tennis is a fast-paced and highly skilled indoor sport that emphasizes quick reflexes, precision, and strategy. It is played on a small table with a net and is accessible to people of all ages and abilities. able tennis requires quick reflexes, agility, hand-eye coordination, and excellent control over the ball. Players must move rapidly to cover the table's entire width and length. The sport is played both recreationally and at the highest competitive levels, including the Olympic Games.</p>
-        <h3>TIMINGS : 6 AM - 8 PM</h3>
-        <p>Get more details about this sport</p><button value="add" id="TT">ADD</button>
-    </div>
-</div>
-    <div class="badminton">
-    <h2>BADMINTON</h2>
-    <div class="slideshow4">
-        <img>
-        <img>
-        <img>
-    </div>
-    <p id="info">Badminton is a fast-paced racket sport played both recreationally and competitively. It is typically played indoors on a rectangular court divided by a net. The game involves two or four players, with the objective of scoring points by hitting a shuttlecock (a feathered or synthetic projectile) over the net and into the opponent's side of the court. It offers a great way to stay physically active, improve one's fitness, and enjoy a competitive or recreational game. Whether played casually with friends or in a professional setting, badminton offers a combination of athleticism and fun.</p><br>
-    <h3>BADMINTON TIMINGS : 6 AM - 10 PM</h3>
-    <p>Get more details about this sport</p><button value="add" id="badminton">ADD</button>
-    </div>
-</div><br>
-<div class="result"></div>
-<script>
-    let sports = ["swimming", "gym", "TT", "badminton"];
-let arr = [];
-
-function add(x) {
-    let sportId = x.getAttribute("id");
-    arr.push(sportId);
-    alert(`Details about ${sportId} have been sent to your email`);
-    document.querySelector(".result").innerText += `\nYou have selected ${sportId}`;
-}
-
-sports.forEach(id => {
-    const element = document.getElementById(id);
-    if (element) {
-        element.addEventListener("click", function() {
-            add(this);
-        });
-    }
-});
-
-</script>
+        <div class="contentbox facilities">
+            <div>
+                <h1>Facilities</h1>
+                <ul>
+                    <li>Banquet Hall</li>
+                    <li>Party Plot</li>
+                    <li>Party Hall</li>
+                    <li>Conference Rooms</li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
