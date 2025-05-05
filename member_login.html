@@ -3,89 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Login</title>
-    <style>
-        *{
-            align-items: center;
-            justify-content: center;
-        }
-        body{
-            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/012/410/341/small_2x/premium-security-cyber-digital-concept-abstract-technology-background-protect-system-innovation-for-business-illustration-vector.jpg");
-            background-size: cover;
-        }
-        H1{
-            color: white;
-            text-align: center;
-        }
-        .login_form{
-            color: white;
-            text-align: center;
-            justify-self: center;
-            justify-content: center;
-            height: 400px;
-            width: 500px;
-            border: 4px solid white;
-            border-radius: 7px;
-            left: 450px;
-            padding: 20px;
-        }
-        .Home{
-        border: 2px solid black;
-        position: sticky;
-        left: 0;
-        top: 0;
-        width: 60px;
-        background-color: rgb(30, 218, 30);
-        box-shadow: 4px 4px rgb(42, 104, 155);
-       }
-       .Home a{
-        text-decoration: none;
-        font-size: large;  
-        color : black;    
-       }
-       .login_form a{
-        color: white;
-       }
-       .login_form a:hover{
-        color: lightgreen;
-       }
-       .login_form input{
-        margin: 5px;
-        padding: 5px;
-       }
-       .submit{
-        width: 200px;
-        height: auto;
-        padding: 10px;
-        border: 2px solid black;
-        border-radius: 5px;
-        color: white;
-        background-color: black;
-       }
-       .submit:hover{
-        background-color: forestgreen;
-        color: whitesmoke;
-       }
-    </style>
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="Home"> <a id="name" href="http://127.0.0.1:5500/DTI-project/index.html">HOME</a></div>
-    <H1>LOGIN</H1><br>
-    <form action="">
-    <div class="login_form">
-       Name:<input type="text" placeholder="Enter name " class="name" required><br><br>
-       Password :<input type="password" placeholder="Password" required><br><br>
-       Confirm password : <input type="password" placeholder="Confirm password" required><br><br>
-       <input type="checkbox" required>I agree to terms and conditions<br><br>
-       <input type="submit" value="Login" class="submit" onclick="confirmlogin()"><br><br>
-       <a href="newmemberlogin.html">Create New Account</a>
+    <div class="home-button"> <a id="name" href="index.html">HOME</a></div>
+    <div class="home-button back"> <a id="name" href="member_login.html">BACK</a></div>
+
+    <div class="registration-container">
+        <h1>REGISTER NOW</h1>
+        <form onsubmit="return formsubmit()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <a href="newmemberlogin.html">Create New Account</a>
+            </div>
+
+            <input type="submit" value="Submit Application" class="submit">
+        </form>
     </div>
-</form>
-<script>
-    function confirmlogin(){
-        let NAME = document.getElementsByClassName("name")[0].value;
-        alert(`Login verified,WELCOME ${NAME}`);
-    }
-</script>
+    <script>
+        function formsubmit(){
+            alert("Your information has been successfully submitted");
+        }
+    </script>
 </body>
 </html>

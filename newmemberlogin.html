@@ -3,64 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Login</title>
-    <style>
-        *{
-            color: white;
-        }
-        body{
-            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/012/410/341/small_2x/premium-security-cyber-digital-concept-abstract-technology-background-protect-system-innovation-for-business-illustration-vector.jpg");
-            background-size: cover;
-        }
-        .Home{
-        border: 2px solid black;
-        position: sticky;
-        left: 0;
-        top: 0;
-        width: 60px;
-        background-color: rgb(30, 218, 30);
-        box-shadow: 4px 4px rgb(42, 104, 155);
-       }
-       .Home a{
-        text-decoration: none;
-        font-size: large;     
-        display: flex;
-        color: black;
-       }
-       .submit{
-        background-color: black ;
-       }
-    </style>
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="Home"> <a id="name" href="http://127.0.0.1:5500/DTI-project/index.html">HOME</a></div>
-    <div class="Home"> <a id="name" href="member_login.html">BACK</a></div>
-    <H1 align="center">REGISTER NOW</H1><br>
-<form
-align="center" >
-Name:
-<input type="text" placeholder="Enter name "><br><br>
-Gender
-<label for="1">
-<input type="radio" value="Male" name="z" id="1">Male</label>
-<label for="2">
-<input type="radio" value="female" name="z" id="2">
+    <div class="home-button"> <a id="name" href="index.html">HOME</a></div>
+    <div class="home-button back"> <a id="name" href="member_login.html">BACK</a></div>
 
-Female</label>
-<br><br>
-DOB : <input type="date" max="10-03-2007"><br><br>
-Email : <input type="email" placeholder="Email address"><br><br>
-Phone : <input type="tel" placeholder="Phone number"><br><br>
+    <div class="registration-container">
+        <h1>REGISTER NOW</h1>
+        <form onsubmit="return formsubmit()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
 
-Password :<input type="password" placeholder="Password"><br><br>
-Confirm password : <input type="password" placeholder="Confirm
-password"><br><br>
-<input type="checkbox">I agree to terms and conditions<br><br>
-<input type="submit" value="Submit Application" class="submit" onclick="formsubmit()"><br><br>
-<script>
-    function formsubmit(){
-        alert("Your information has been succesfully submitted");
-    }
-</script>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" max="2007-03-10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to terms and conditions</label>
+            </div>
+
+            <input type="submit" value="Submit Application" class="submit">
+        </form>
+    </div>
+    <script>
+        function formsubmit(){
+            alert("Your information has been successfully submitted");
+        }
+    </script>
 </body>
 </html>
