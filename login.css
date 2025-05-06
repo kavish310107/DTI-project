@@ -58,6 +58,10 @@ h1 {
 .form-group {
     margin-bottom: 20px;
 }
+.form-group ::placeholder{
+    color: white;
+}
+
 
 label {
     display: block;
