@@ -11,14 +11,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: lightgoldenrodyellow;
+  background-color: #d7f0ef;
   justify-content: center;
   align-items: center;
 }
 
 main {
   margin: 0 auto;
-  /* flex-grow: 1; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -28,18 +27,16 @@ main {
 }
 
 header {
+  /* background-color: #2e757a; */
   width: 100%;
-  background: linear-gradient(90deg, #2c3e50, #4ca1af);
   color: white;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   position:sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  
 }
 .contentbox {
-  background-color: #4ca2afc6;
   color: whitesmoke;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,11 +44,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: tranform 1s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
 }
 .navbar {
+  
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +82,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #27595e;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -98,7 +97,7 @@ header {
   display: block;
 }
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #53acae;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -113,6 +112,8 @@ header {
 }
 .contentbox:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border: 5px solid #7ecaca;
+  transform: scale(1.01);
 }
 .contentbox li:hover {
   background-color: rgba(255, 255, 255, 0.4);
@@ -149,7 +150,6 @@ header {
   background-size: cover;
 }
 footer{
-  background: linear-gradient(90deg, #2c3e50, #4ca1af);
   color: white;
   width: 100vw;
   height: auto;
@@ -279,4 +279,34 @@ main div ul li a{
 .trainer{
   background: url('trainer.jpg');
   background-size: cover;
+}
+.logo img{
+  height:50px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid rgba(14, 16, 75, 0.94);
+}
+.logo img:hover {
+  transform: scale(1.1);
+}
+.name{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #dfdde7;
+  font-size:xx-large;
+  font-weight: bold;
+  transition: all 1s ease;
+}
+.name:hover{
+  transform: scale(1.05);
+}
+
+header, footer {
+  background-color: #3a8d92;
+  border-bottom: 3px solid #B0BEC5;
+}
+
+.dropdown-content {
+  background-color: #3a8d92;
 }
