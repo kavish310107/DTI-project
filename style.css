@@ -172,6 +172,7 @@ footer{
 }
 #col1 ul{
   padding: 10px;
+  list-style-type: none;
 }
 #col1 ul li{
   margin: 5px;
@@ -300,9 +301,14 @@ main div ul li a{
   transform: scale(1.05);
 }
 
-header, footer {
+header {
   background-color: #3a8d92;
   border-bottom: 3px solid #B0BEC5;
+}
+
+footer{
+  background-color: #3a8d92;
+  margin-bottom: 0px;
 }
 
 .dropdown-content {
