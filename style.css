@@ -104,7 +104,7 @@ header {
 .contentbox li {
   padding: 0.8rem;
   margin: 0.7rem 0;
-  background-color: rgba(212, 201, 201, 0.5);
+  background-color: rgba(212, 201, 201, 0.8);
   color: #0a0a0a;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -115,7 +115,7 @@ header {
   transform: scale(1.01);
 }
 .contentbox li:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.9);
   transform: scale(1.01);
 }
 .contentbox ul {
