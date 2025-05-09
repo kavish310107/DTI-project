@@ -27,7 +27,6 @@ main {
 }
 
 header {
-  /* background-color: #2e757a; */
   width: 100%;
   color: white;
   padding: 0 2rem;
@@ -44,7 +43,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: tranform 1s ease, box-shadow 0.3s ease;
+  transition: all 1s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
 }
@@ -112,7 +111,7 @@ header {
 }
 .contentbox:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  border: 5px solid #7ecaca;
+  /* border: 5px solid #7ecaca; */
   transform: scale(1.01);
 }
 .contentbox li:hover {
@@ -215,15 +214,14 @@ li img{
 .home-button a {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #e74c3c;
+  background-color: #f1c40f;
   color: white; 
   text-decoration: none;
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0,0,0,0.2);
-  /* transition: all 0.3s ease; */
   font-size: 1.1rem;
-  border: 2px solid #c0392b; 
+  border: 2px solid #f1c40f; 
 }
 .home-button a:hover {
     box-shadow: 1px 1px black;
