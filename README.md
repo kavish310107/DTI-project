@@ -29,22 +29,21 @@ A fully responsive and visually engaging website for **Champions Sports Club**, 
 
 Sports_Club_Website
 │
-├── index.html                 # Homepage
-├── blog.html                  # Blog & founders page
-├── member_login.html          # Member login page
-├── newmemberlogin.html        # New member registration page
-├── style.css                  # Main stylesheet
-├── login.css                  # Styles for login/registration
-├── images                     # Club images & icons
-│   ├── gm.jpg
-│   ├── spt.jpg
-│   ├── fd.png
-│   ├── banquet.png
-│   ├── ...etc
-├── scripts/                   # Optional JavaScript files
+├── index.html          # Homepage
+├── blog.html           # Blog & founders page
+├── member_login.html   # Member login page
+├── newmemberlogin.html # New member registration page
+├── style.css           # Main stylesheet
+├── login.css           # Styles for login/registration
+├── images              # Club images & icons
+│ ├── gm.jpg
+│ ├── spt.jpg
+│ ├── fd.png
+│ ├── banquet.png
+│ └── ...etc
+├── scripts/           # Optional JavaScript files
 │
-└── README.md                  # Project documentation
-
+└── README.md          # Project documentation
 
 
 📅 Future Enhancements
